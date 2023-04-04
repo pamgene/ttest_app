@@ -1,28 +1,28 @@
 {
   "kind": "Workflow",
-  "id": "f5c97621b867550a358a0673f3d71b5b",
+  "id": "c396df425957007ccc1d5a6ff91713cf",
   "isDeleted": false,
-  "rev": "2-c47de76f53ed3d604a84caadedef7554",
+  "rev": "10-fd931962162f9814aee806d8d25f1e39",
   "description": "Determines if there is a significant difference between the means of two groups.",
   "name": "TTest_app",
-  "createdBy": "fnaji",
+  "createdBy": "dschuller",
   "acl": {
     "kind": "Acl",
-    "owner": "pamgene",
+    "owner": "Test_NewTemplates",
     "aces": []
   },
   "createdDate": {
     "kind": "Date",
-    "value": "2022-04-01T17:44:38.069247Z"
+    "value": "2023-03-15T12:15:31.640799Z"
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2022-04-01T17:44:38.278917Z"
+    "value": "2023-04-04T12:48:09.288850Z"
   },
   "urls": [
     {
       "kind": "Url",
-      "uri": "https://github.com/tercen/ttest_app"
+      "uri": "https://github.com/pamgene/ttest_app"
     }
   ],
   "tags": [],
@@ -36,16 +36,31 @@
       "kind": "Pair",
       "key": "copyOf",
       "value": "35c33fa33c9e6aba0dce6483f526958e"
+    },
+    {
+      "kind": "Pair",
+      "key": "_upgrade_",
+      "value": "0.10.0"
+    },
+    {
+      "kind": "Pair",
+      "key": "_upgrade_reset_",
+      "value": "0.10.0"
+    },
+    {
+      "kind": "Pair",
+      "key": "_upgrade_old_task_",
+      "value": "0.10.15"
     }
   ],
   "url": {
     "kind": "Url",
     "uri": "https://github.com/tercen/ttest_app"
   },
-  "version": "0.1.3",
+  "version": "0.1.5",
   "authors": [],
   "isPublic": false,
-  "projectId": "c845ceade32c4423bc616ff5ab22f158",
+  "projectId": "5fdacf2e254f508d0bd669ac039f912e",
   "folderId": "",
   "links": [
     {
@@ -309,7 +324,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 2
+          "nRows": 1
         },
         "filters": {
           "kind": "Filters",
@@ -321,35 +336,50 @@
           "namespace": "ds0",
           "operatorRef": {
             "kind": "OperatorRef",
-            "name": "t-Test - Two Group",
-            "version": "0.0.2",
-            "operatorId": "c845ceade32c4423bc616ff5ab453499",
-            "operatorKind": "ROperator",
+            "name": "t Test",
+            "version": "1.1.0",
+            "operatorId": "e50efaa75416f1b61950d47b86216abc",
+            "operatorKind": "DockerOperator",
             "propertyValues": [
               {
                 "kind": "PropertyValue",
-                "name": "Paired T-test",
+                "name": "alternative",
+                "value": "two.sided"
+              },
+              {
+                "kind": "PropertyValue",
+                "name": "paired",
                 "value": "false"
               },
               {
                 "kind": "PropertyValue",
-                "name": "Equal Variance",
+                "name": "p.adjust.method",
+                "value": "holm"
+              },
+              {
+                "kind": "PropertyValue",
+                "name": "mu",
+                "value": "0"
+              },
+              {
+                "kind": "PropertyValue",
+                "name": "var.equal",
                 "value": "true"
               },
               {
                 "kind": "PropertyValue",
-                "name": "Alternative",
-                "value": "Two sided"
+                "name": "conf.level",
+                "value": "0.95"
               },
               {
                 "kind": "PropertyValue",
-                "name": "Sign of effect",
-                "value": "Reverse"
+                "name": "detailed",
+                "value": "false"
               }
             ],
             "url": {
               "kind": "Url",
-              "uri": "https://github.com/tercen/two_sample_ttest_operator"
+              "uri": "https://github.com/tercen/t_test_operator"
             }
           },
           "environment": [
@@ -393,7 +423,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 100
+          "nRows": 1
         },
         "taskId": ""
       },
@@ -433,7 +463,7 @@
         "topLeft": {
           "kind": "Point",
           "x": 484.5050000000001,
-          "y": 209.5
+          "y": 208.5
         }
       },
       "state": {
@@ -631,7 +661,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 16
+          "nRows": 1
         },
         "filters": {
           "kind": "Filters",
@@ -643,20 +673,25 @@
           "namespace": "ds1",
           "operatorRef": {
             "kind": "OperatorRef",
-            "name": "Z-score scaling",
-            "version": "0.0.2",
-            "operatorId": "c845ceade32c4423bc616ff5ab45478d",
+            "name": "Scale",
+            "version": "0.11.0",
+            "operatorId": "e50efaa75416f1b61950d47b861d2015",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
                 "kind": "PropertyValue",
-                "name": "Dimension",
-                "value": "Row"
+                "name": "scale",
+                "value": "true"
+              },
+              {
+                "kind": "PropertyValue",
+                "name": "center",
+                "value": "true"
               }
             ],
             "url": {
               "kind": "Url",
-              "uri": "https://github.com/tercen/zscore_scaling_operator"
+              "uri": "https://github.com/tercen/scale_operator"
             }
           },
           "environment": []
@@ -689,7 +724,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 100
+          "nRows": 1
         },
         "taskId": ""
       },
@@ -1219,7 +1254,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 2
+          "nRows": 1
         },
         "filters": {
           "kind": "Filters",
@@ -2037,7 +2072,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 800
+          "nRows": 1
         },
         "taskId": ""
       },
@@ -2307,7 +2342,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 16
+          "nRows": 1
         },
         "filters": {
           "kind": "Filters",
@@ -2320,8 +2355,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "Identity",
-            "version": "0.0.1",
-            "operatorId": "c845ceade32c4423bc616ff5ab1876f9",
+            "version": "0.1.0",
+            "operatorId": "5fdacf2e254f508d0bd669ac03ef799a",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -2359,7 +2394,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 100
+          "nRows": 1
         },
         "taskId": ""
       },
@@ -2371,7 +2406,7 @@
   ],
   "offset": {
     "kind": "Point",
-    "x": -22.0,
-    "y": 248.0
+    "x": -40.0,
+    "y": 192.0
   }
 }
