@@ -374,7 +374,7 @@
               {
                 "kind": "PropertyValue",
                 "name": "detailed",
-                "value": "false"
+                "value": "true"
               }
             ],
             "url": {
