@@ -2,24 +2,23 @@
 
 ##### Description
 
-`ttest_app` is an application that determines if there is a significant difference between the means of two groups.
+`ttest_app`, T-test application determines if there is a significant difference between the means of two groups. It performs Student's t-test on the data.
 
 ##### Details
-
-The application consists of a data input, a workflow and a data output. 
-
-The input data is the log transformed [ptk dataset](https://tercen.com/r/35c33fa33c9e6aba0dce6483f59174e3)
+The input data should be log / VSN transformed.
 
 The workflow has 2 operators:
 
-* [two_sample_ttest_operator](https://github.com/tercen/two_sample_ttest_operator)
-* [zscore_scaling_operator](https://github.com/tercen/zscore_scaling_operator)
+* [t_test_operator](https://github.com/tercen/t_test_operator)
+* [scale_operator](https://github.com/tercen/scale_operator)
 
-Furthermore it has 2 views:
+T_test operator settings:
+* detailed = True
+* var.equal = True
+* paired = False
+
+
+Views:
 
 * Volcano plot
 * Significant treatment effects
-
-##### See Also
-
-[ttest_app](https://github.com/tercen/ttest_app)

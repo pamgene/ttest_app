@@ -796,7 +796,7 @@
                 "factors": [
                   {
                     "kind": "Factor",
-                    "name": "ds1.Row.Scale",
+                    "name": "ds1.value",
                     "type": "double"
                   }
                 ],
@@ -1118,7 +1118,7 @@
                 "factors": [
                   {
                     "kind": "Factor",
-                    "name": "ds0.logp",
+                    "name": "ds0.neglog10_p",
                     "type": "double"
                   }
                 ],
@@ -1204,7 +1204,7 @@
                   "kind": "GraphicalFactor",
                   "factor": {
                     "kind": "Factor",
-                    "name": "ds0.logp",
+                    "name": "ds0.neglog10_p",
                     "type": "double"
                   },
                   "rectangle": {
