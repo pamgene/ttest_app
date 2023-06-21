@@ -375,12 +375,12 @@
               {
                 "kind": "PropertyValue",
                 "name": "detailed",
-                "value": "false"
+                "value": "true"
               },
               {
                 "kind": "PropertyValue",
                 "name": "reference_index",
-                "value": "1"
+                "value": "2"
               }
             ],
             "url": {
