@@ -2,7 +2,7 @@
   "kind": "Workflow",
   "id": "164f4cf9ebe56cb1bc5e859e586dca89",
   "isDeleted": false,
-  "rev": "5-1e8fb9cef99bbd224532fe4ec441def6",
+  "rev": "7-9135d02f15fee25e223dfd0c59939363",
   "description": "Determines if there is a significant difference between the means of two groups.",
   "name": "TTest_app",
   "createdBy": "dschuller",
@@ -17,7 +17,7 @@
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2023-06-21T11:24:22.143775Z"
+    "value": "2023-06-21T11:39:53.929270Z"
   },
   "urls": [
     {
@@ -131,7 +131,7 @@
     },
     {
       "kind": "Link",
-      "id": "c4149c85-25e0-44cf-b8b5-95043e2ab5fe",
+      "id": "dddcca05-e6a7-4bd4-b071-cbf19c5de989",
       "inputId": "4ce9ab15-42bd-4813-9baa-84ac651227ac-i-0",
       "outputId": "886ae15c-a6e3-4a2f-9bf6-12228a1031c4-o-0"
     }
@@ -375,12 +375,12 @@
               {
                 "kind": "PropertyValue",
                 "name": "detailed",
-                "value": "true"
+                "value": "false"
               },
               {
                 "kind": "PropertyValue",
                 "name": "reference_index",
-                "value": "2"
+                "value": "1"
               }
             ],
             "url": {
@@ -438,7 +438,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "74a3e041-0eab-431a-8d40-008b4b3227bd"
+        "id": "9ef5cdcf-746f-41aa-a9c2-e53f9c0c4fe5"
       },
       "parentDataStepId": ""
     },
@@ -744,7 +744,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "6c009a5d-13f5-42a6-8a24-6b8fa69a9b77"
+        "id": "f35d831d-4aa3-41b6-8292-bc760fd45c8a"
       },
       "parentDataStepId": ""
     },
@@ -779,7 +779,7 @@
         "topLeft": {
           "kind": "Point",
           "x": 493.0568750000002,
-          "y": 308.5
+          "y": 307.5
         }
       },
       "state": {
@@ -1070,7 +1070,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "9f01a4bf-36de-4166-9190-2f00ee7e7e8a"
+        "id": "9e8c1696-0663-4137-b224-7fea66d97411"
       },
       "parentDataStepId": ""
     },
@@ -1336,7 +1336,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "99176a05-4ca9-4cd1-862a-58206a5e218b"
+        "id": "7400eac4-a83c-40f9-9a77-df974267d814"
       },
       "parentDataStepId": ""
     },
@@ -2137,7 +2137,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "dc976db2-ebac-453d-bcca-eabf0304cd5c"
+        "id": "8617f2ec-54b3-4e34-ae76-0504d2bdee38"
       },
       "parentDataStepId": ""
     },
@@ -2464,14 +2464,14 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "a1ee5546-647e-4ed5-9e0b-ecf5b6967a56"
+        "id": "c462f973-d739-406b-a3e9-8998b3696b96"
       },
       "parentDataStepId": ""
     }
   ],
   "offset": {
     "kind": "Point",
-    "x": 78.0,
-    "y": 317.0
+    "x": 71.0,
+    "y": 313.0
   }
 }
