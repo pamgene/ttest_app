@@ -1543,7 +1543,7 @@
         "kind": "WizardStepModel",
         "namespace": "TTEST",
         "description": "Determines if there is a significant difference between the means of two groups.",
-        "appDesignType": "TTEST.c07_super_2group_control_pair",
+        "appDesignType": "ttest.c07_super_2group_control_pair",
         "factors": [
           {
             "kind": "MappingFactor",
