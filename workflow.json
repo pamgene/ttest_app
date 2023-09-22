@@ -2,13 +2,13 @@
   "kind": "Workflow",
   "id": "a9cd3a4bedccc84127966ac725cea40c",
   "isDeleted": false,
-  "rev": "4-c7aedd9196c1f39160360deb90cbaca3",
+  "rev": "3-a49dac79f270f75dae1b0826abb51634",
   "description": "Determines if there is a significant difference between the means of two groups.",
   "name": "TTest_app",
   "createdBy": "dschuller",
   "acl": {
     "kind": "Acl",
-    "owner": "Test_NewTemplates",
+    "owner": "dschuller",
     "aces": []
   },
   "createdDate": {
@@ -17,7 +17,7 @@
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2023-09-22T11:05:25.550480Z"
+    "value": "2023-07-20T14:33:11.761277Z"
   },
   "urls": [
     {
@@ -1543,7 +1543,7 @@
         "kind": "WizardStepModel",
         "namespace": "TTEST",
         "description": "Determines if there is a significant difference between the means of two groups.",
-        "appDesignType": "TTEST.c07_super_2group_control_pair",
+        "appDesignType": "ttest.c07_super_2group_control_pair",
         "factors": [
           {
             "kind": "MappingFactor",
@@ -1583,7 +1583,7 @@
             "type": "string",
             "isSingle": false,
             "description": "Select the peptide identifier.\n\nExample:\n* ID",
-            "factorName": "Variable",
+            "factorName": "Peptide",
             "factors": [
               {
                 "kind": "Factor",
