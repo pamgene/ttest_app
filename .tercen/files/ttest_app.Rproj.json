@@ -1,0 +1,42 @@
+{
+ "kind": "FileDocument",
+ "id": "ttest_app.Rproj",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "ttest_app.Rproj",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "dataUri": "lfs/ca/f3/9ad006f06dacc20df75e0d0afa912fc3a99cf05564f519cd6784843ae016",
+ "metadata": {
+  "kind": "FileMetadata",
+  "contentType": "",
+  "cacheControl": "",
+  "contentEncoding": "",
+  "contentLanguage": "",
+  "md5Hash": ""
+ },
+ "size": 204
+}
