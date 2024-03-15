@@ -45,6 +45,11 @@
    "kind": "Pair",
    "key": "_upgrade_old_task_",
    "value": "0.10.15"
+  },
+  {
+   "kind": "Pair",
+   "key": "PUBLISHED",
+   "value": "true"
   }
  ],
  "url": {
@@ -88,12 +93,6 @@
   },
   {
    "kind": "Link",
-   "id": "ab92c0dc-9680-4e52-b75f-b86ad31718c1",
-   "inputId": "3665b007-17ce-4524-9dea-60c467544090-i-0",
-   "outputId": "4d6be273-e53d-48ee-876a-35975ede03fa-o-0"
-  },
-  {
-   "kind": "Link",
    "id": "e4aa323d-f7e1-4159-8dea-d33e842b0a6e",
    "inputId": "11dcae34-92e4-47b6-a316-c07697ca26c1-i-0",
    "outputId": "bb2658f7-c697-4a0f-b46a-adce92224ddc-o-0"
@@ -106,21 +105,27 @@
   },
   {
    "kind": "Link",
-   "id": "dddcca05-e6a7-4bd4-b071-cbf19c5de989",
-   "inputId": "4ce9ab15-42bd-4813-9baa-84ac651227ac-i-0",
-   "outputId": "886ae15c-a6e3-4a2f-9bf6-12228a1031c4-o-0"
-  },
-  {
-   "kind": "Link",
    "id": "d82cd0d0-e5a1-4616-9b73-4e2b1fdd5b4d",
    "inputId": "bb2658f7-c697-4a0f-b46a-adce92224ddc-i-0",
    "outputId": "4d6be273-e53d-48ee-876a-35975ede03fa-o-0"
   },
   {
    "kind": "Link",
-   "id": "79e9b43a-8e2b-4b05-91bb-d4a94012dd06",
+   "id": "fe6d5394-fde7-4b9b-830e-5a0e6085d525",
    "inputId": "c8f053b4-0abe-440d-88e4-fe66c848c105-i-0",
    "outputId": "4ce9ab15-42bd-4813-9baa-84ac651227ac-o-0"
+  },
+  {
+   "kind": "Link",
+   "id": "bf921417-b3d2-4f55-9d28-0a6c4892a01d",
+   "inputId": "1965a6f4-5668-4272-8f34-9c8146f92c50-i-0",
+   "outputId": "4d6be273-e53d-48ee-876a-35975ede03fa-o-0"
+  },
+  {
+   "kind": "Link",
+   "id": "624b21eb-352e-416c-9ff8-37e89db37f4a",
+   "inputId": "4ce9ab15-42bd-4813-9baa-84ac651227ac-i-0",
+   "outputId": "78e24ab4-9c49-469b-9bae-9e4218ce98d5-o-0"
   }
  ],
  "steps": [
@@ -431,7 +436,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "9be13f12-e3b5-4bf8-83c7-09bcb49a7b5e"
+    "id": "e74365fb-2095-4723-a926-42ec07c841cc"
    },
    "parentDataStepId": ""
   },
@@ -743,7 +748,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "c00dc96a-ae46-4371-9aa1-6e288364653b"
+    "id": "b8e13e3f-67d4-402b-a8b1-828003979c2a"
    },
    "parentDataStepId": ""
   },
@@ -811,7 +816,7 @@
         "factors": [
          {
           "kind": "Factor",
-          "name": "ds1.value",
+          "name": "ds1.scaled_value",
           "type": "double"
          }
         ],
@@ -819,22 +824,22 @@
          "kind": "RampPalette",
          "backcolor": 0,
          "properties": [],
-         "isUserDefined": true,
+         "isUserDefined": false,
          "doubleColorElements": [
           {
            "kind": "DoubleColorElement",
            "color": 255,
-           "stringValue": "-2.165596304123489"
+           "stringValue": "-2.2416051373720656"
           },
           {
            "kind": "DoubleColorElement",
            "color": 16777215,
-           "stringValue": "0"
+           "stringValue": "0.016757763096785894"
           },
           {
            "kind": "DoubleColorElement",
            "color": 16711680,
-           "stringValue": "2.197975378584678"
+           "stringValue": "2.2751206635656374"
           }
          ]
         }
@@ -895,7 +900,7 @@
          "kind": "GraphicalFactor",
          "factor": {
           "kind": "Factor",
-          "name": "ds1.value",
+          "name": "ds1.scaled_value",
           "type": "double"
          },
          "rectangle": {
@@ -988,7 +993,7 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 1
+     "nRows": 16
     },
     "filters": {
      "kind": "Filters",
@@ -1044,7 +1049,7 @@
     },
     "rowTable": {
      "kind": "CrosstabTable",
-     "cellSize": 167.16666666666669,
+     "cellSize": 45.166666666666686,
      "offset": 0,
      "graphicalFactors": [
       {
@@ -1070,13 +1075,13 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 1
+     "nRows": 7
     },
     "taskId": ""
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "8f3c5d46-1fc0-4c03-a761-5372d4207c51"
+    "id": "555fccec-a0db-432b-b2d4-c5be3197550d"
    },
    "parentDataStepId": ""
   },
@@ -1348,7 +1353,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "6a7d2b26-d61d-43ea-936c-2b42114a5a77"
+    "id": "37c3d031-b271-46c2-a2c2-ee82cd6360a6"
    },
    "parentDataStepId": ""
   },
@@ -1425,102 +1430,6 @@
    "description": ""
   },
   {
-   "kind": "OutStep",
-   "id": "3665b007-17ce-4524-9dea-60c467544090",
-   "groupId": "",
-   "name": "Output",
-   "inputs": [
-    {
-     "kind": "InputPort",
-     "id": "3665b007-17ce-4524-9dea-60c467544090-i-0",
-     "linkType": "any",
-     "name": "in"
-    }
-   ],
-   "outputs": [
-    {
-     "kind": "OutputPort",
-     "id": "3665b007-17ce-4524-9dea-60c467544090-o-0",
-     "linkType": "any",
-     "name": "out"
-    }
-   ],
-   "rectangle": {
-    "kind": "Rectangle",
-    "extent": {
-     "kind": "Point",
-     "x": 88.99000000000001,
-     "y": 55.0
-    },
-    "topLeft": {
-     "kind": "Point",
-     "x": 744.3674218750002,
-     "y": 203.5
-    }
-   },
-   "state": {
-    "kind": "StepState",
-    "taskId": "",
-    "taskState": {
-     "kind": "InitState"
-    }
-   },
-   "description": "",
-   "groupPortPosition": {
-    "kind": "Point",
-    "x": 0.0,
-    "y": 0.0
-   }
-  },
-  {
-   "kind": "InStep",
-   "id": "886ae15c-a6e3-4a2f-9bf6-12228a1031c4",
-   "groupId": "",
-   "name": "Input",
-   "inputs": [
-    {
-     "kind": "InputPort",
-     "id": "886ae15c-a6e3-4a2f-9bf6-12228a1031c4-i-0",
-     "linkType": "any",
-     "name": "in"
-    }
-   ],
-   "outputs": [
-    {
-     "kind": "OutputPort",
-     "id": "886ae15c-a6e3-4a2f-9bf6-12228a1031c4-o-0",
-     "linkType": "any",
-     "name": "out"
-    }
-   ],
-   "rectangle": {
-    "kind": "Rectangle",
-    "extent": {
-     "kind": "Point",
-     "x": 88.99000000000001,
-     "y": 55.0
-    },
-    "topLeft": {
-     "kind": "Point",
-     "x": 456.5050000000001,
-     "y": -183.5
-    }
-   },
-   "state": {
-    "kind": "StepState",
-    "taskId": "",
-    "taskState": {
-     "kind": "InitState"
-    }
-   },
-   "description": "",
-   "groupPortPosition": {
-    "kind": "Point",
-    "x": 0.0,
-    "y": 0.0
-   }
-  },
-  {
    "kind": "WizardStep",
    "id": "4ce9ab15-42bd-4813-9baa-84ac651227ac",
    "groupId": "",
@@ -1550,8 +1459,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 458.9308755493166,
-     "y": -88.5
+     "x": 457.9308755493166,
+     "y": -86.5
     }
    },
    "state": {
@@ -2103,7 +2012,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "8f73fb9d-c2e2-455c-a625-2dcfb69ce6ae"
+    "id": "25960b36-a8ee-4ac4-a443-1f409925aa48"
    },
    "parentDataStepId": ""
   },
@@ -2437,15 +2346,111 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "dc8bf554-1992-4d34-a51b-b19a8e925604"
+    "id": "35d0cc3a-2715-4e65-918a-2837c44b51b0"
    },
    "parentDataStepId": ""
+  },
+  {
+   "kind": "OutStep",
+   "id": "1965a6f4-5668-4272-8f34-9c8146f92c50",
+   "groupId": "",
+   "name": "Output",
+   "inputs": [
+    {
+     "kind": "InputPort",
+     "id": "1965a6f4-5668-4272-8f34-9c8146f92c50-i-0",
+     "linkType": "any",
+     "name": "from"
+    }
+   ],
+   "outputs": [
+    {
+     "kind": "OutputPort",
+     "id": "1965a6f4-5668-4272-8f34-9c8146f92c50-o-0",
+     "linkType": "any",
+     "name": "to"
+    }
+   ],
+   "rectangle": {
+    "kind": "Rectangle",
+    "extent": {
+     "kind": "Point",
+     "x": 88.99000000000001,
+     "y": 55.0
+    },
+    "topLeft": {
+     "kind": "Point",
+     "x": 744.6319406127931,
+     "y": 210.5
+    }
+   },
+   "state": {
+    "kind": "StepState",
+    "taskId": "",
+    "taskState": {
+     "kind": "InitState"
+    }
+   },
+   "description": "Output of a sub workflow.",
+   "groupPortPosition": {
+    "kind": "Point",
+    "x": 0.0,
+    "y": 0.0
+   }
+  },
+  {
+   "kind": "InStep",
+   "id": "78e24ab4-9c49-469b-9bae-9e4218ce98d5",
+   "groupId": "",
+   "name": "Input",
+   "inputs": [
+    {
+     "kind": "InputPort",
+     "id": "78e24ab4-9c49-469b-9bae-9e4218ce98d5-i-0",
+     "linkType": "any",
+     "name": "from"
+    }
+   ],
+   "outputs": [
+    {
+     "kind": "OutputPort",
+     "id": "78e24ab4-9c49-469b-9bae-9e4218ce98d5-o-0",
+     "linkType": "any",
+     "name": "to"
+    }
+   ],
+   "rectangle": {
+    "kind": "Rectangle",
+    "extent": {
+     "kind": "Point",
+     "x": 88.99000000000001,
+     "y": 55.0
+    },
+    "topLeft": {
+     "kind": "Point",
+     "x": 455.755,
+     "y": -184.0
+    }
+   },
+   "state": {
+    "kind": "StepState",
+    "taskId": "",
+    "taskState": {
+     "kind": "InitState"
+    }
+   },
+   "description": "Input of a sub workflow.",
+   "groupPortPosition": {
+    "kind": "Point",
+    "x": 0.0,
+    "y": 0.0
+   }
   }
  ],
  "offset": {
   "kind": "Point",
-  "x": 78.0,
-  "y": 209.0
+  "x": 374.75,
+  "y": 229.5
  },
  "scale": 1.0
 }
