@@ -45,6 +45,11 @@
    "kind": "Pair",
    "key": "_upgrade_old_task_",
    "value": "0.10.15"
+  },
+  {
+   "kind": "Pair",
+   "key": "PUBLISHED",
+   "value": "true"
   }
  ],
  "url": {
@@ -366,7 +371,7 @@
        {
         "kind": "PropertyValue",
         "name": "reference_index",
-        "value": "1"
+        "value": "2"
        }
       ],
       "url": {
